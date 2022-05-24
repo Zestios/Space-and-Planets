@@ -29,6 +29,11 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 p {
   font-size: 1.6rem;
 }
@@ -46,9 +51,10 @@ p {
 .header__nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.header-logo {
+.header-logo a {
   font-size: 2.4rem;
   font-weight: 700;
   color: var(--color-secondary);
@@ -60,8 +66,12 @@ p {
   gap: 2rem;
 }
 
-.header-links li {
+.header-links a {
   color: var(--color-tertiary);
+}
+
+.header-logo a:hover, .header-links a:hover {
+  color: var(--color-quaternary);
 }
 
 h1 {
@@ -75,17 +85,20 @@ h1 {
   color: var(--color-tertiary);
 }
 
-button {
+.button {
   color: #fff;
   background-color: var(--color-quaternary);
   padding: 8px 24px;
   border-radius: 10px;
   font-weight: 700;
   font-size: 1.6rem;
+  display: inline-block;
 }
 
-.header__hero button {
-  border: none;
+.button:hover {
+  color: var(--color-quaternary);
+  background-color: #fff;
+  transition: all .3s;
 }
 
 
@@ -139,7 +152,7 @@ h3 {
   font-weight: 300;
 }
 
-.sign-up button {
+.sign-up .button {
   border: 2px solid #fff;
 }
 
