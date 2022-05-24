@@ -39,13 +39,40 @@ p {
 }
 
 .section {
-  padding: 0 15vw;
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+
+/* BUTTONS */
+.button {
+  color: #fff;
+  background-color: var(--color-quaternary);
+  padding: 8px 24px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1.6rem;
+  display: inline-block;
+}
+
+.button:hover {
+  color: var(--color-quaternary);
+  background-color: #fff;
+  transition: all .3s;
 }
 
 
 /* HEADER */
 .header, .footer {
   background-color: var(--color-primary);
+}
+
+.header {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .header__nav {
@@ -62,7 +89,6 @@ p {
 
 .header-links {
   display: flex;
-  flex-direction: row;
   gap: 2rem;
 }
 
@@ -72,6 +98,7 @@ p {
 
 .header-logo a:hover, .header-links a:hover {
   color: var(--color-quaternary);
+  transition: all .3s;
 }
 
 h1 {
@@ -85,20 +112,19 @@ h1 {
   color: var(--color-tertiary);
 }
 
-.button {
-  color: #fff;
-  background-color: var(--color-quaternary);
-  padding: 8px 24px;
-  border-radius: 10px;
-  font-weight: 700;
-  font-size: 1.6rem;
-  display: inline-block;
+.header__hero {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 5rem;
 }
 
-.button:hover {
-  color: var(--color-quaternary);
-  background-color: #fff;
-  transition: all .3s;
+.hero-text p {
+  margin: 1.5rem 0;
+}
+
+.header__hero img {
+  width: 50%;
 }
 
 
@@ -158,6 +184,11 @@ h3 {
 
 
 /* FOOTER */
+.footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .footer p {
   color: var(--color-tertiary);
 }
