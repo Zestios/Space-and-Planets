@@ -56,7 +56,7 @@ p {
 
 .header-links {
   display: flex;
-  flex-direction: row;
+  gap: 2rem;
 }
 
 .header-links li {
