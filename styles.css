@@ -24,6 +24,9 @@ html {
 
 html, body {
   font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 ul {
@@ -173,6 +176,10 @@ h2 {
 /* TESTIMONIALS */
 .testimonials {
   background-color: var(--color-tertiary);
+  padding: 10rem 35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .testimonials p {
@@ -184,6 +191,7 @@ h2 {
 
 .testimonials b {
   font-size: 2.4rem;
+  align-self: flex-end;
 }
 
 
@@ -191,6 +199,12 @@ h2 {
 .sign-up {
   background-color: var(--color-quaternary);
   color: var(--color-secondary);
+  border-radius: 10px;
+  width: 70vw;
+  padding: 5rem;
+  margin: 10rem;
+  display: flex;
+  justify-content: space-around;
 }
 
 h3 {
@@ -203,6 +217,7 @@ h3 {
 
 .sign-up .button {
   border: 2px solid #fff;
+  align-self: center;
 }
 
 
@@ -210,6 +225,9 @@ h3 {
 .footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .footer p {
